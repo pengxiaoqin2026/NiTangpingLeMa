@@ -1,0 +1,67 @@
+.container {
+  min-height: 100vh;
+  padding: 80rpx 40rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80rpx;
+}
+
+.title {
+  font-size: 64rpx;
+  font-weight: 700;
+  letter-spacing: 4rpx;
+}
+
+.subtitle {
+  margin-top: 16rpx;
+  font-size: 26rpx;
+  color: #888;
+}
+
+.picker-card {
+  width: 100%;
+  padding: 36rpx 32rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  box-shadow: 0 8rpx 24rpx rgba(0, 0, 0, 0.04);
+}
+
+.label {
+  display: block;
+  font-size: 24rpx;
+  color: #999;
+  margin-bottom: 12rpx;
+}
+
+.value {
+  font-size: 32rpx;
+  color: #222;
+}
+
+.primary-btn {
+  width: 100%;
+  margin-top: 48rpx;
+  background: #1f7a5c;
+  color: #fff;
+  border-radius: 48rpx;
+  font-size: 32rpx;
+  padding: 24rpx 0;
+}
+
+.primary-btn[disabled] {
+  background: #c8d6d0;
+  color: #fff;
+}
+
+.tip {
+  margin-top: 48rpx;
+  font-size: 22rpx;
+  color: #aaa;
+}

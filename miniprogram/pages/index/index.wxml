@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="hero">
+    <text class="title">你躺平了吗</text>
+    <text class="subtitle">算算你离躺平还差多少年牛马</text>
+  </view>
+
+  <picker mode="region" value="{{region}}" bindchange="onRegionChange">
+    <view class="picker-card">
+      <text class="label">选择城市</text>
+      <text class="value">{{cityText || '点击选择省份和城市'}}</text>
+    </view>
+  </picker>
+
+  <button class="primary-btn" bindtap="onStart">开始测算</button>
+
+  <text class="tip">娱乐测算 · 仅供参考，不构成投资理财建议</text>
+</view>

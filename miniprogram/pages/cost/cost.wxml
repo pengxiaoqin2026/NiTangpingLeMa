@@ -1,0 +1,24 @@
+<view class="container">
+  <view class="head">
+    <text class="city">{{city}}</text>
+    <text class="hint">月生活费估算 · 可点击修改</text>
+  </view>
+
+  <view class="card">
+    <view class="item" wx:for="{{items}}" wx:key="name">
+      <text class="name">{{item.name}}</text>
+      <view class="amount-wrap">
+        <text class="cny">¥</text>
+        <input class="amount" type="digit" value="{{item.amount}}" data-index="{{index}}" bindinput="onAmountChange" />
+      </view>
+    </view>
+    <view class="divider"></view>
+    <view class="total">
+      <text>合计</text>
+      <text class="num">¥{{total}} / 月</text>
+    </view>
+  </view>
+
+  <button class="primary-btn" bindtap="onNext">下一步</button>
+  <text class="tip">估算值仅供参考，可手动修改各项金额</text>
+</view>

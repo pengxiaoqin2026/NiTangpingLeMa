@@ -1,0 +1,15 @@
+<view class="container" wx:if="{{report}}">
+  <view class="report-card">
+    <text class="report-title">{{report.title}}</text>
+    <view class="line"></view>
+    <text class="report-body">{{report.body}}</text>
+    <view class="line"></view>
+    <text class="quote">{{report.quote}}</text>
+  </view>
+
+  <view class="actions">
+    <button class="primary-btn" bindtap="onCopy">复制报告</button>
+    <button class="ghost-btn" bindtap="onRestart">重新测算</button>
+  </view>
+  <text class="tip">{{report.footer}}</text>
+</view>

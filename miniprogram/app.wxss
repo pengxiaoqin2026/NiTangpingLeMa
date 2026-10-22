@@ -1,0 +1,14 @@
+page {
+  background: #f6f7fb;
+  font-size: 28rpx;
+  color: #222;
+  line-height: 1.6;
+}
+
+view, text, button, input {
+  box-sizing: border-box;
+}
+
+button {
+  margin: 0;
+}
