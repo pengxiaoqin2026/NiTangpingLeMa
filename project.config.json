@@ -1,0 +1,29 @@
+{
+  "description": "你躺平了吗（牛马计算器）",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "postcss": true,
+    "minified": true,
+    "newFeature": false,
+    "coverView": true,
+    "showShadowRootInWxmlPanel": true,
+    "useIsolateContext": true,
+    "useApiHook": true,
+    "useApiHostProcess": true,
+    "enhance": true,
+    "useMultiFrameRuntime": true,
+    "minifyWXSS": true,
+    "minifyWXML": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "3.0.0",
+  "appid": "wx45eb2712f2376686",
+  "projectname": "ni-tangping-le-ma",
+  "miniprogramRoot": "miniprogram/",
+  "condition": {}
+}

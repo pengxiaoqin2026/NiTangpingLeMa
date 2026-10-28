@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="field">
+    <text class="label">当前年龄（岁）</text>
+    <input class="inp" type="number" placeholder="例如 28" value="{{age}}" bindinput="onAge" />
+  </view>
+
+  <view class="field">
+    <text class="label">当前存款（元）</text>
+    <input class="inp" type="digit" placeholder="例如 200000" value="{{deposit}}" bindinput="onDeposit" />
+  </view>
+
+  <view class="field">
+    <text class="label">税后月工资（元）</text>
+    <input class="inp" type="digit" placeholder="例如 15000" value="{{salary}}" bindinput="onSalary" />
+  </view>
+
+  <view class="field">
+    <text class="label">年化收益率</text>
+    <view class="rates">
+      <text class="rate {{rate == 0.02 ? 'active' : ''}}" data-r="0.02" bindtap="onRate">2%</text>
+      <text class="rate {{rate == 0.03 ? 'active' : ''}}" data-r="0.03" bindtap="onRate">3%</text>
+      <text class="rate {{rate == 0.04 ? 'active' : ''}}" data-r="0.04" bindtap="onRate">4%</text>
+      <text class="rate {{rate == 0.06 ? 'active' : ''}}" data-r="0.06" bindtap="onRate">6%</text>
+    </view>
+  </view>
+
+  <button class="primary-btn" bindtap="onCalc">计算牛马年限</button>
+  <text class="tip">存款与工资仅在本地计算，不会上传</text>
+</view>

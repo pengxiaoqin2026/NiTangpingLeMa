@@ -1,0 +1,49 @@
+<view class="container">
+  <view class="card">
+    <text class="praise">{{praise}}</text>
+    <view class="row">
+      <text class="label">躺平所需本金</text>
+      <text class="big">¥{{asset}}</text>
+    </view>
+    <view class="progress-wrap">
+      <view class="progress-head">
+        <text class="progress-label">躺平进度</text>
+        <text class="progress-num">{{progress}}%</text>
+      </view>
+      <view class="progress-bar">
+        <view class="progress-fill" style="width: {{progress}}%"></view>
+      </view>
+      <text class="progress-desc">已有 ¥{{deposit}}，目标 ¥{{asset}}</text>
+    </view>
+    <view class="divider"></view>
+    <block wx:if="{{canRetire}}">
+      <view class="row">
+        <text class="label">牛马倒计时</text>
+        <text class="big good">0 天，已经自由</text>
+      </view>
+    </block>
+    <block wx:elif="{{infeasible}}">
+      <view class="row">
+        <text class="label">牛马倒计时</text>
+        <text class="big warn">暂时算不出来</text>
+      </view>
+      <text class="desc">你的月收入低于当地生活费，先换个城市或争取加薪吧</text>
+    </block>
+    <block wx:else>
+      <view class="row">
+        <text class="label">牛马倒计时</text>
+        <text class="big">{{duration}}</text>
+      </view>
+      <view class="row" wx:if="{{showAge}}">
+        <text class="label">躺平年龄</text>
+        <text class="big age-num">约 {{retireAge}} 岁</text>
+      </view>
+      <text class="desc" wx:if="{{capped}}">真实需要的年头更长，已按 55 岁退休封顶</text>
+    </block>
+  </view>
+
+  <button class="primary-btn" bindtap="onReport">生成牛马报告</button>
+  <button class="ghost-btn" bindtap="onRestart">重新测算</button>
+  <text class="tip">娱乐测算 · 仅供参考，不构成投资理财建议</text>
+  <text class="soothe">这只是个理想化数字游戏，生活里还有很多算不出来的东西。</text>
+</view>

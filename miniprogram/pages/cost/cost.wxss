@@ -1,0 +1,93 @@
+.container {
+  min-height: 100vh;
+  padding: 40rpx;
+}
+
+.head {
+  margin-bottom: 32rpx;
+}
+
+.city {
+  display: block;
+  font-size: 44rpx;
+  font-weight: 700;
+}
+
+.hint {
+  display: block;
+  margin-top: 8rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20rpx;
+  padding: 8rpx 32rpx;
+  box-shadow: 0 8rpx 24rpx rgba(0, 0, 0, 0.04);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26rpx 0;
+}
+
+.name {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.amount-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.cny {
+  font-size: 28rpx;
+  color: #999;
+  margin-right: 6rpx;
+}
+
+.amount {
+  width: 160rpx;
+  text-align: right;
+  font-size: 30rpx;
+}
+
+.divider {
+  height: 1rpx;
+  background: #f0f0f0;
+}
+
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28rpx 0;
+}
+
+.num {
+  font-size: 36rpx;
+  font-weight: 700;
+  color: #1f7a5c;
+}
+
+.primary-btn {
+  width: 100%;
+  margin-top: 48rpx;
+  background: #1f7a5c;
+  color: #fff;
+  border-radius: 48rpx;
+  font-size: 32rpx;
+  padding: 24rpx 0;
+}
+
+.tip {
+  display: block;
+  margin-top: 32rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #aaa;
+}
