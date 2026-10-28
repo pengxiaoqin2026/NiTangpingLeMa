@@ -1,10 +1,7 @@
 name: Sync from Gitee
 
 on:
-  schedule:
-    # 每 15 分钟检查一次；GitHub Actions 的定时可能延迟，实际间隔会更长
-    - cron: '*/15 * * * *'
-  workflow_dispatch: # 允许在 Actions 页面手动点击运行
+   workflow_dispatch: # 允许在 Actions 页面手动点击运行
 
 permissions:
   contents: write # 允许工作流把合并结果推回 GitHub 仓库
