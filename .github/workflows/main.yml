@@ -1,10 +1,7 @@
-name: Sync from Gitee
+name: Sync from Gitee Skills
 
 on:
-  schedule:
-    # 每 15 分钟检查一次；GitHub Actions 的定时可能延迟，实际间隔会更长
-    - cron: '*/15 * * * *'
-  workflow_dispatch: # 允许在 Actions 页面手动点击运行
+   workflow_dispatch: # 允许在 Actions 页面手动点击运行
 
 permissions:
   contents: write # 允许工作流把合并结果推回 GitHub 仓库
@@ -31,7 +28,7 @@ jobs:
           # ⚠️ 替换下面两个占位符：
           # 你的Gitee用户名 = Gitee 个人空间地址 gitee.com/ 后面的部分
           # 你的Gitee仓库名 = Gitee 上的仓库名称
-          git remote add gitee https://oauth2:${GITEE_TOKEN}@gitee.com/pengxiaoqin2026/NiTangpingLeMa.git
+          git remote add gitee https://oauth2:${GITEE_TOKEN}@gitee.com/peng-xiaoqin-git/my-set-of-skills.git
           git fetch gitee --prune
 
       - name: Merge Gitee changes
